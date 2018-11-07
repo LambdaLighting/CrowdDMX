@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on('color_update', function(color){
+        var body = document.getElementsByTagName("body")[0];
+        body.style.backgroundColor = color
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+# Config file for ola_trigger tool, which will call the send_web.py script
+# to send new DMX data to all connected clients
+#
+# https://wiki.openlighting.org/index.php/OLA_DMX_Trigger
+# ola_trigger -u 0 ola_trigger_config
+#
+# <Channel> TAB <Values/ Range/ All> TAB `<Command>`
+
+10       %       `python3 send_web.py "red" "${slot_value}"`
+11       %       `python3 send_web.py "green" "${slot_value}"`
+12       %       `python3 send_web.py "blue" "${slot_value}"`
