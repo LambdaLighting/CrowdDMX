@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Send UDP Package to PhoneDMX Action Socket, which will send its data to all
+# Send UDP Package to CrowdDMX Action Socket, which will send its data to all
 # connected clients
 
 import socket, time, sys
