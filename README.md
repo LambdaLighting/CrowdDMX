@@ -11,3 +11,4 @@ call a script which sends data to this socket.
   - send update to clients only once (currently 3x by rgb update)
   - Maybe port socket server to rust
 - Create and test networking setup
+- Add multiple channels
